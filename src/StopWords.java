@@ -1,0 +1,123 @@
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class StopWords {
+	private static Set<String> Stopwords;
+	
+	static {
+		Stopwords = new HashSet<String>();
+		Stopwords.add("a"); Stopwords.add("about"); Stopwords.add("above"); 
+		Stopwords.add("across"); Stopwords.add("after"); Stopwords.add("afterwards"); 
+		Stopwords.add("again"); Stopwords.add("against"); Stopwords.add("all"); 
+		Stopwords.add("almost"); Stopwords.add("alone"); Stopwords.add("along"); 
+		Stopwords.add("already"); Stopwords.add("also"); Stopwords.add("although"); 
+		Stopwords.add("always"); Stopwords.add("am"); Stopwords.add("among"); 
+		Stopwords.add("amongst"); Stopwords.add("amoungst"); Stopwords.add("amount"); 
+		Stopwords.add("an"); Stopwords.add("and"); Stopwords.add("another"); 
+		Stopwords.add("any"); Stopwords.add("anyhow"); Stopwords.add("anyone"); 
+		Stopwords.add("anything"); Stopwords.add("anyway"); Stopwords.add("anywhere"); 
+		Stopwords.add("are"); Stopwords.add("around"); Stopwords.add("as"); 
+		Stopwords.add("at"); Stopwords.add("back"); Stopwords.add("be"); 
+		Stopwords.add("became"); Stopwords.add("because"); Stopwords.add("become"); 
+		Stopwords.add("becomes"); Stopwords.add("becoming"); Stopwords.add("been"); 
+		Stopwords.add("before"); Stopwords.add("beforehand"); Stopwords.add("behind"); 
+		Stopwords.add("being"); Stopwords.add("below"); Stopwords.add("beside"); 
+		Stopwords.add("besides"); Stopwords.add("between"); Stopwords.add("beyond"); 
+		Stopwords.add("bill"); Stopwords.add("both"); Stopwords.add("bottom"); 
+		Stopwords.add("but"); Stopwords.add("by"); Stopwords.add("call"); 
+		Stopwords.add("can"); Stopwords.add("cannot"); Stopwords.add("cant"); 
+		Stopwords.add("co"); Stopwords.add("computer"); Stopwords.add("con"); 
+		Stopwords.add("could"); Stopwords.add("couldnt"); Stopwords.add("cry"); 
+		Stopwords.add("de"); Stopwords.add("describe"); Stopwords.add("detail"); 
+		Stopwords.add("do"); Stopwords.add("done"); Stopwords.add("down"); 
+		Stopwords.add("due"); Stopwords.add("during"); Stopwords.add("each"); 
+		Stopwords.add("eg"); Stopwords.add("eight"); Stopwords.add("either"); 
+		Stopwords.add("eleven"); Stopwords.add("else"); Stopwords.add("elsewhere"); 
+		Stopwords.add("empty"); Stopwords.add("enough"); Stopwords.add("etc"); 
+		Stopwords.add("even"); Stopwords.add("ever"); Stopwords.add("every"); 
+		Stopwords.add("everyone"); Stopwords.add("everything"); Stopwords.add("everywhere"); 
+		Stopwords.add("except"); Stopwords.add("few"); Stopwords.add("fifteen"); 
+		Stopwords.add("fify"); Stopwords.add("fill"); Stopwords.add("find"); 
+		Stopwords.add("fire"); Stopwords.add("first"); Stopwords.add("five"); 
+		Stopwords.add("for"); Stopwords.add("former"); Stopwords.add("formerly"); 
+		Stopwords.add("forty"); Stopwords.add("found"); Stopwords.add("four"); 
+		Stopwords.add("from"); Stopwords.add("front"); Stopwords.add("full"); 
+		Stopwords.add("further"); Stopwords.add("get"); Stopwords.add("give"); 
+		Stopwords.add("go"); Stopwords.add("had"); Stopwords.add("has"); 
+		Stopwords.add("hasnt"); Stopwords.add("have"); Stopwords.add("he"); 
+		Stopwords.add("hence"); Stopwords.add("her"); Stopwords.add("here"); 
+		Stopwords.add("hereafter"); Stopwords.add("hereby"); Stopwords.add("herein"); 
+		Stopwords.add("hereupon"); Stopwords.add("hers"); Stopwords.add("herself"); 
+		Stopwords.add("him"); Stopwords.add("himself"); Stopwords.add("his"); 
+		Stopwords.add("how"); Stopwords.add("however"); Stopwords.add("hundred"); 
+		Stopwords.add("i"); Stopwords.add("ie"); Stopwords.add("if"); 
+		Stopwords.add("in"); Stopwords.add("inc"); Stopwords.add("indeed"); 
+		Stopwords.add("interest"); Stopwords.add("into"); Stopwords.add("is"); 
+		Stopwords.add("it"); Stopwords.add("its"); Stopwords.add("itself"); 
+		Stopwords.add("keep"); Stopwords.add("last"); Stopwords.add("latter"); 
+		Stopwords.add("latterly"); Stopwords.add("least"); Stopwords.add("less"); 
+		Stopwords.add("ltd"); Stopwords.add("made"); Stopwords.add("many"); 
+		Stopwords.add("may"); Stopwords.add("me"); Stopwords.add("meanwhile"); 
+		Stopwords.add("might"); Stopwords.add("mill"); Stopwords.add("mine"); 
+		Stopwords.add("more"); Stopwords.add("moreover"); Stopwords.add("most"); 
+		Stopwords.add("mostly"); Stopwords.add("move"); Stopwords.add("much"); 
+		Stopwords.add("must"); Stopwords.add("my"); Stopwords.add("myself"); 
+		Stopwords.add("name"); Stopwords.add("namely"); Stopwords.add("neither"); 
+		Stopwords.add("never"); Stopwords.add("nevertheless"); Stopwords.add("next"); 
+		Stopwords.add("nine"); Stopwords.add("no"); Stopwords.add("nobody"); 
+		Stopwords.add("none"); Stopwords.add("noone"); Stopwords.add("nor"); 
+		Stopwords.add("not"); Stopwords.add("nothing"); Stopwords.add("now"); 
+		Stopwords.add("nowhere"); Stopwords.add("of"); Stopwords.add("off"); 
+		Stopwords.add("often"); Stopwords.add("on"); Stopwords.add("once"); 
+		Stopwords.add("one"); Stopwords.add("only"); Stopwords.add("onto"); 
+		Stopwords.add("or"); Stopwords.add("other"); Stopwords.add("others"); 
+		Stopwords.add("otherwise"); Stopwords.add("our"); Stopwords.add("ours"); 
+		Stopwords.add("ourselves"); Stopwords.add("out"); Stopwords.add("over"); 
+		Stopwords.add("own"); Stopwords.add("part"); Stopwords.add("per"); 
+		Stopwords.add("perhaps"); Stopwords.add("please"); Stopwords.add("put"); 
+		Stopwords.add("rather"); Stopwords.add("re"); Stopwords.add("same"); 
+		Stopwords.add("see"); Stopwords.add("seem"); Stopwords.add("seemed"); 
+		Stopwords.add("seeming"); Stopwords.add("seems"); Stopwords.add("serious"); 
+		Stopwords.add("several"); Stopwords.add("she"); Stopwords.add("should"); 
+		Stopwords.add("show"); Stopwords.add("side"); Stopwords.add("since"); 
+		Stopwords.add("sincere"); Stopwords.add("six"); Stopwords.add("sixty"); 
+		Stopwords.add("so"); Stopwords.add("some"); Stopwords.add("somehow"); 
+		Stopwords.add("someone"); Stopwords.add("something"); Stopwords.add("sometime"); 
+		Stopwords.add("sometimes"); Stopwords.add("somewhere"); Stopwords.add("still"); 
+		Stopwords.add("such"); Stopwords.add("system"); Stopwords.add("take"); 
+		Stopwords.add("ten"); Stopwords.add("than"); Stopwords.add("that"); 
+		Stopwords.add("the"); Stopwords.add("their"); Stopwords.add("them"); 
+		Stopwords.add("themselves"); Stopwords.add("then"); Stopwords.add("thence"); 
+		Stopwords.add("there"); Stopwords.add("thereafter"); Stopwords.add("thereby"); 
+		Stopwords.add("therefore"); Stopwords.add("therein"); Stopwords.add("thereupon"); 
+		Stopwords.add("these"); Stopwords.add("they"); Stopwords.add("thick"); 
+		Stopwords.add("thin"); Stopwords.add("third"); Stopwords.add("this"); 
+		Stopwords.add("those"); Stopwords.add("though"); Stopwords.add("three"); 
+		Stopwords.add("through"); Stopwords.add("throughout"); Stopwords.add("thru"); 
+		Stopwords.add("thus"); Stopwords.add("to"); Stopwords.add("together"); 
+		Stopwords.add("too"); Stopwords.add("top"); Stopwords.add("toward"); 
+		Stopwords.add("towards"); Stopwords.add("twelve"); Stopwords.add("twenty"); 
+		Stopwords.add("two"); Stopwords.add("un"); Stopwords.add("under"); 
+		Stopwords.add("until"); Stopwords.add("up"); Stopwords.add("upon"); 
+		Stopwords.add("us"); Stopwords.add("very"); Stopwords.add("via"); 
+		Stopwords.add("was"); Stopwords.add("we"); Stopwords.add("well"); 
+		Stopwords.add("were"); Stopwords.add("what"); Stopwords.add("whatever"); 
+		Stopwords.add("when"); Stopwords.add("whence"); Stopwords.add("whenever"); 
+		Stopwords.add("where"); Stopwords.add("whereafter"); Stopwords.add("whereas"); 
+		Stopwords.add("whereby"); Stopwords.add("wherein"); Stopwords.add("whereupon"); 
+		Stopwords.add("wherever"); Stopwords.add("whether"); Stopwords.add("which"); 
+		Stopwords.add("while"); Stopwords.add("whither"); Stopwords.add("who"); 
+		Stopwords.add("whoever"); Stopwords.add("whole"); Stopwords.add("whom"); 
+		Stopwords.add("whose"); Stopwords.add("why"); Stopwords.add("will"); 
+		Stopwords.add("with"); Stopwords.add("within"); Stopwords.add("without"); 
+		Stopwords.add("would"); Stopwords.add("yet"); Stopwords.add("you"); 
+		Stopwords.add("your"); Stopwords.add("yours"); Stopwords.add("yourself"); 
+		Stopwords.add("yourselves"); Stopwords.add("fit"); Stopwords.add("sports");
+	}
+	
+	public static boolean contains(String stop_word){
+		return Stopwords.contains(stop_word);
+	}
+	
+}
